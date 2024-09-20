@@ -1,6 +1,7 @@
 services:
   mysql:
     build: ./mysql/
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=retail_db
