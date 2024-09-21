@@ -9,3 +9,8 @@ services:
       - '3310:3306'
     volumes:
       - ./mysql/data:/mysql/data
+    env_file:
+      - ./mysql/variables.env
+volumes:
+  mysqldata:
+  mongodata:  
